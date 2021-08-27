@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import ProductsInteraction from "./ProductsInteraction";
 import MainContent from "./MainContent";
@@ -9,7 +9,8 @@ import "./ProductListing.css";
 const ProductListing = () => {
 	const [clickedTitleSubmit, setClickedTitleSubmit] = useState("");
 	const [isActive, setIsActive] = useState("");
-	const [filteredPrice, setFilteredPrice] = useState(productData);
+	const [productsList, setProductsList] = useState(productData);
+	const [filteredByPrice, setFilteredByPrice] = useState(productsList);
 
 	const clickedTitleSubmitHandler = (title) => {
 		setClickedTitleSubmit(title);
@@ -19,15 +20,29 @@ const ProductListing = () => {
 		setIsActive(active);
 	};
 
-	const filterByPriceHandler= (range) => {
-		setFilteredPrice(range);
-	}
+	const filterByPriceHandler = (range) => {
+		setFilteredByPrice(range);
+	};
+
+	useEffect(() => {
+		if (clickedTitleSubmit !== "") {
+			setProductsList(
+				productData.filter(
+					(product) =>
+						product.title.toLowerCase() === clickedTitleSubmit.toLowerCase()
+				)
+			);
+		}
+	}, [clickedTitleSubmit]);
+
+	useEffect(() => {
+		setProductsList(filteredByPrice);
+	}, [filteredByPrice]);
+
 	
-
-
 	return (
 		<div className="container">
-			<div className={`main_image ${isActive ? 'active' : ''}`}>
+			<div className={`main_image ${isActive ? "active" : ""}`}>
 				<Header />
 				<ProductsInteraction
 					onClickedTitleSubmit={clickedTitleSubmitHandler}
@@ -38,9 +53,9 @@ const ProductListing = () => {
 
 			<div className="container">
 				<MainContent
-					products={productData}
+					products={productsList}
 					clickedTitle={clickedTitleSubmit}
-					filteredPriceData={filteredPrice}				
+					filteredPriceData={filteredByPrice}
 				/>
 				<Footer />
 			</div>

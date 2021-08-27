@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
     return (
 			<nav>
-				<div className="logo">The Book Spot</div>
+				<div className="logo">JS Band Store</div>
 				<ul>
 					<li>Home</li>
 					<li>Our Products</li>
