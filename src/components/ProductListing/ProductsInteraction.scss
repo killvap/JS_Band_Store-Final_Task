@@ -1,0 +1,111 @@
+.main_image {
+	background: url(https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1453&q=80);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 300px;
+	position: relative;
+	background-attachment: fixed;
+	&.active {
+		height: 520px;
+	}
+}
+.product_interactions {
+	display: flex;
+	padding-top: 100px;
+}
+
+.search-form {
+	padding: 0 0 20px 320px;
+	.search-form_group {
+		position: relative;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-ms-flex-align: stretch;
+		align-items: stretch;
+		input {
+			border-radius: 0.25rem;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			height: calc(1.5em + 1rem + 2px);
+			padding: 0.5rem 1rem;
+			font-size: 1.25rem;
+			line-height: 1.5;
+			display: block;
+			width: 100%;
+			font-weight: 400;
+			background-color: #fff;
+			background-clip: padding-box;
+			border: 1px solid #ced4da;
+			transition: border-color 0.15s;
+			flex: 1 1 0%;
+			min-width: 0;
+			margin-bottom: 0;
+		}
+	}
+	.search-form_group-append {
+		display: flex;
+		margin-left: -1px;
+		button {
+			padding: 0.5rem 1rem;
+			font-size: 1.25rem;
+			line-height: 1.5;
+			position: relative;
+			z-index: 2;
+			display: inline-block;
+			font-weight: 400;
+			color: #212529;
+			text-align: center;
+			vertical-align: middle;
+			cursor: pointer;
+			user-select: none;
+			border: 1px solid transparent;
+			font-size: 1rem;
+			line-height: 1.5;
+			border-radius: 0.25rem;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			transition: color 0.15s;
+			color: #fff;
+			background-color: black;
+			border-color: black;
+			i {
+				color: white;
+			}
+		}
+	}
+}
+
+.price-filter {
+	border: 1px solid black;
+	border-radius: 0.25rem;
+	height: 49px;
+	padding: 10px;
+	background-color: black;
+	margin-left: 40px;
+	.price-filter_label {
+		margin-right: 1.5em;
+		color: white;
+	}
+
+	.price-filter_button {
+		height: 30px;
+		width: 150px;
+		font-family: "Montserrat", sans-serif;
+		font-size: 13px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: 1.9px;
+		padding: 2px 3px;
+		color: #121212;
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
