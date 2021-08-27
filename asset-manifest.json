@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/JS_Band_Store-Final_Task/static/css/main.16e27e60.chunk.css",
+    "main.js": "/JS_Band_Store-Final_Task/static/js/main.4b4c84f7.chunk.js",
+    "main.js.map": "/JS_Band_Store-Final_Task/static/js/main.4b4c84f7.chunk.js.map",
+    "runtime-main.js": "/JS_Band_Store-Final_Task/static/js/runtime-main.b3f589ee.js",
+    "runtime-main.js.map": "/JS_Band_Store-Final_Task/static/js/runtime-main.b3f589ee.js.map",
+    "static/js/2.6718b947.chunk.js": "/JS_Band_Store-Final_Task/static/js/2.6718b947.chunk.js",
+    "static/js/2.6718b947.chunk.js.map": "/JS_Band_Store-Final_Task/static/js/2.6718b947.chunk.js.map",
+    "static/js/3.72b98e5a.chunk.js": "/JS_Band_Store-Final_Task/static/js/3.72b98e5a.chunk.js",
+    "static/js/3.72b98e5a.chunk.js.map": "/JS_Band_Store-Final_Task/static/js/3.72b98e5a.chunk.js.map",
+    "index.html": "/JS_Band_Store-Final_Task/index.html",
+    "static/css/main.16e27e60.chunk.css.map": "/JS_Band_Store-Final_Task/static/css/main.16e27e60.chunk.css.map",
+    "static/js/2.6718b947.chunk.js.LICENSE.txt": "/JS_Band_Store-Final_Task/static/js/2.6718b947.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/JS_Band_Store-Final_Task/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b3f589ee.js",
+    "static/js/2.6718b947.chunk.js",
+    "static/css/main.16e27e60.chunk.css",
+    "static/js/main.4b4c84f7.chunk.js"
+  ]
+}
