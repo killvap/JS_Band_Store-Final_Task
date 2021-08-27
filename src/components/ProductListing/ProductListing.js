@@ -3,6 +3,7 @@ import Header from "./Header";
 import ProductsInteraction from "./ProductsInteraction";
 import MainContent from "./MainContent";
 import Footer from "./Footer";
+import NotFound from "./NotFound";
 import productData from "../../data/ProductData";
 import "./ProductListing.css";
 
@@ -39,7 +40,6 @@ const ProductListing = () => {
 		setProductsList(filteredByPrice);
 	}, [filteredByPrice]);
 
-	
 	return (
 		<div className="container">
 			<div className={`main_image ${isActive ? "active" : ""}`}>
@@ -52,11 +52,16 @@ const ProductListing = () => {
 			</div>
 
 			<div className="container">
-				<MainContent
-					products={productsList}
-					clickedTitle={clickedTitleSubmit}
-					filteredPriceData={filteredByPrice}
-				/>
+				{productsList.length === 0 ? (
+					<NotFound clickedTitle={clickedTitleSubmit} />
+				) : (
+					<MainContent
+						products={productsList}
+						clickedTitle={clickedTitleSubmit}
+						filteredPriceData={filteredByPrice}
+					/>
+				)}
+
 				<Footer />
 			</div>
 		</div>

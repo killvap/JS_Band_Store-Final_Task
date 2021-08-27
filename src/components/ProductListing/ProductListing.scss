@@ -81,11 +81,7 @@ nav {
 	box-sizing: border-box;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	.no-result_message {
-		font-size: 50px;
-		text-align: center;
-		margin: 0 auto;
-	}
+
 	h3 {
 		position: absolute;
 		left: 0;
@@ -170,14 +166,14 @@ nav {
 	font-size: 12px;
 	padding: 0 20px;
 	position: fixed;
-    bottom: 0;
-    width: 100%;
+	bottom: 0;
+	width: 100%;
 	p {
 		background-color: lightgray;
 		border-radius: 20px;
 		padding: 8px;
 	}
-	
+
 	.social {
 		@extend .dFlex;
 		.fa {

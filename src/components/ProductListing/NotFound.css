@@ -1,0 +1,19 @@
+.no-result_message {
+  font-size: 50px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.no-result_message img {
+  width: auto;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.no-result_message span {
+  padding-top: 40px;
+}
+/*# sourceMappingURL=NotFound.css.map */
