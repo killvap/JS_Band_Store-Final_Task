@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const MainContent = (props) => {
 	return (
-		<div className="main_content">
-			{noResultMessage}
+		<div className="main_content">		
 			{props.products.map((item) => (
 				<div className="card" key={(item = Math.random().toString())}>
 					<div className="card_img">
