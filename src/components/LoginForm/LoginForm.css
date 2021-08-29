@@ -1,0 +1,55 @@
+.login_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.login_container .login_container__row {
+  margin: auto;
+  background-color: #fafaee;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.login_container .login_card {
+  padding: 20px;
+}
+
+.login_container .login_card .login_card__img {
+  height: 300px;
+  width: auto;
+  padding: 30px;
+}
+
+.login_container .form-group {
+  display: -ms-grid;
+  display: grid;
+}
+
+.login_container .form-group label {
+  font-weight: bold;
+}
+
+.login_container .form-group label, .login_container .form-group input {
+  margin-bottom: 10px;
+}
+
+.login_container .form-group input {
+  padding: 5px;
+}
+
+.login_container .form-group .btn {
+  width: 100%;
+  border: none;
+}
+
+.login_container .form-group:hover .btn {
+  background-color: #fe8033;
+}
+/*# sourceMappingURL=LoginForm.css.map */
