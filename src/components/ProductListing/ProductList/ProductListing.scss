@@ -33,43 +33,6 @@ body {
 	box-sizing: border-box;
 }
 
-nav {
-	@extend .dFlex;
-	justify-content: space-between;
-	width: 100%;
-	color: $white;
-	padding: 30px;
-	.logo {
-		font-size: 50px;
-	}
-	ul {
-		@extend .dFlex;
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-		li {
-			transform: skewX(-10deg);
-			font-size: 25px;
-			margin-left: 15px;
-			padding: 15px;
-			box-sizing: border-box;
-			cursor: pointer;
-			width: auto;
-			height: 35px;
-			background-color: black;
-			@extend .dFlex;
-		}
-	}
-	.search {
-		color: rgba($white, 0.7);
-		.fa {
-			cursor: pointer;
-			+ .fa {
-				margin-left: 15px;
-			}
-		}
-	}
-}
 
 .main_content {
 	@extend .dFlex;
@@ -156,37 +119,4 @@ nav {
 	position: relative;
 	transition: background-color 0.3s ease;
 	overflow: hidden;
-}
-
-.footer {
-	@extend .dFlex;
-	justify-content: space-between;
-	color: black;
-	font-size: 12px;
-	padding: 0 20px;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	p {
-		background-color: lightgray;
-		border-radius: 20px;
-		padding: 8px;
-	}
-
-	.social {
-		@extend .dFlex;
-		.fa {
-			background-color: lightgray;
-			width: 50px;
-			height: 50px;
-			border-radius: 50px;
-			border: 1px solid black;
-			@extend .dFlex;
-			font-size: 14px;
-			cursor: pointer;
-			+ .fa {
-				margin-left: 15px;
-			}
-		}
-	}
 }

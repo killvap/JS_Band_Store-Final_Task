@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Header from "./Header";
-import ProductsInteraction from "./ProductsInteraction";
-import MainContent from "./MainContent";
-import Footer from "./Footer";
-import NotFound from "./NotFound";
-import productData from "../../data/ProductData";
+
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import MainContent from "./ProductList";
+import ProductsInteraction from "../ProductsInteraction/ProductsInteraction";
+import NotFound from "../NotFound/NotFound"
+import productData from "../../../data/ProductData";
+
 import "./ProductListing.css";
 
 const ProductListing = () => {

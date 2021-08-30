@@ -1,12 +1,12 @@
 import './App.css';
-import ProductListing from './components/ProductListing/ProductListing';
+import ProductListing from './components/ProductListing/ProductList/ProductListing';
 import LoginPage from './pages/LoginPage/LoginPage';
 
 
 
 function App() {
   // Temporary mock for Login Page
-const loginMock = true;
+const loginMock = false;
 
   return <>{loginMock ? <LoginPage/> : <ProductListing />}</>;
 }

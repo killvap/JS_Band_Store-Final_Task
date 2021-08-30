@@ -1,6 +1,6 @@
 import React from "react";
 
-const MainContent = (props) => {
+const ProductList = (props) => {
 	return (
 		<div className="main_content">		
 			{props.products.map((item) => (
@@ -23,4 +23,4 @@ const MainContent = (props) => {
 	);
 };
 
-export default MainContent;
+export default ProductList;
