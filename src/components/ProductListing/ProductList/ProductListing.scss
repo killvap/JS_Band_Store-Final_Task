@@ -53,7 +53,8 @@ body {
 		font-size: 10.5vw;
 	}
 	.card {
-		padding: 30px;
+		height: 500px;
+		padding: 25px;
 		width: 25%;
 		border-radius: 15px;
 		@extend .dFlex;
@@ -73,17 +74,27 @@ body {
 		.card_header {
 			@extend .dFlex;
 			flex-direction: column;
-			color: $white;
-			h2 {
-				font-size: 18px;
+			color: black;
+			text-align: center;
+			span {
+				font-size: 20px;
+				padding-top: 5px;
+				font-weight: bold;
 			}
 			p {
-				font-size: 14px;
-				text-align: center;
-				color: rgba($white, 0.3);
+				font-size: 16px;
+				
 				margin: 8px 0;
+				padding-bottom: 5px;
 			}
+			
+		}
+
+		.card_body {
+			display: flex;
+			padding-top: 10px;
 			.price {
+				padding-top: 4px;
 				font-size: 25px;
 				color: $cta;
 				span {
@@ -99,18 +110,16 @@ body {
 		transform: scale(1.1);
 		cursor: pointer;
 		border-style: groove;
-	}
-	.card:hover {
-		.btn {
+		.btn:hover {
 			background-color: $cta;
 			color: $white;
-		}
+		}	
 	}
 }
 .btn {
-	width: 130px;
+	width: 90px;
 	height: 35px;
-	font-size: 14px;
+	font-size: 20px;
 	border-radius: 35px;
 	background-color: black;
 	color: white;
@@ -119,4 +128,5 @@ body {
 	position: relative;
 	transition: background-color 0.3s ease;
 	overflow: hidden;
+	margin-left: 15px;
 }
