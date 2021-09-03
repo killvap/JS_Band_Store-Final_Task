@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./ProductSearch.css";
+import "./ProductSearch.scss";
 
 const ProductSearch = (props) => {
 	// States

@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import ProductListing from './components/ProductListing/ProductList/ProductListing';
 import LoginPage from './pages/LoginPage/LoginPage';
 

@@ -7,7 +7,7 @@ import ProductsInteraction from "../ProductsInteraction/ProductsInteraction";
 import NotFound from "../NotFound/NotFound"
 import productData from "../../../data/ProductData";
 
-import "./ProductListing.css";
+import "./ProductListing.scss";
 
 const ProductListing = () => {
 	const [clickedTitleSubmit, setClickedTitleSubmit] = useState("");
