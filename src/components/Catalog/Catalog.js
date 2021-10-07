@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import MainContent from "./ProductList";
+import MainContent from "../ProductList/ProductList";
 import ProductsInteraction from "../ProductsInteraction/ProductsInteraction";
-import NotFound from "../NotFound/NotFound"
-import productData from "../../../data/ProductData";
+import NotFound from "../NotFound/NotFound";
+import productData from "../../data/ProductData";
 
-import "./ProductListing.scss";
+import "./Catalog.scss";
 
-const ProductListing = () => {
+const Catalog = () => {
 	const [clickedTitleSubmit, setClickedTitleSubmit] = useState("");
 	const [isActive, setIsActive] = useState("");
 	const [productsList, setProductsList] = useState(productData);
@@ -70,4 +70,4 @@ const ProductListing = () => {
 	);
 };
 
-export default ProductListing;
+export default Catalog;

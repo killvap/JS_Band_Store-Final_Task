@@ -1,14 +1,20 @@
+import { Route } from "react-router-dom";
+
 import './App.scss';
-import ProductListing from './components/ProductListing/ProductList/ProductListing';
-import LoginPage from './pages/LoginPage/LoginPage';
-
-
+import CatalogPage from "./pages/CatalogPage";
+import LoginPage from './pages/LoginPage';
 
 function App() {
-  // Temporary mock for Login Page
-const loginMock = false;
-
-  return <>{loginMock ? <LoginPage/> : <ProductListing />}</>;
+  return (
+		<>
+      <Route path={`${process.env.PUBLIC_URL}`}>
+        <CatalogPage/>
+      </Route>
+			<Route path={`${process.env.PUBLIC_URL}/login`}>
+        <LoginPage/>
+      </Route>
+		</>
+	);
 }
 
 export default App;
