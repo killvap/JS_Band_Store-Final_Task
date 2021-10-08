@@ -43,14 +43,16 @@ const Catalog = () => {
 	}, [filteredByPrice]);
 
 	return (
-		<div className="container">
+		<>
 			<div className={`main_image ${isActive ? "active" : ""}`}>
 				<Header />
-				<ProductsInteraction
-					onClickedTitleSubmit={clickedTitleSubmitHandler}
-					onSetClassName={setClassNameHandler}
-					onFilterByPrice={filterByPriceHandler}
-				/>
+				<div className="container">
+					<ProductsInteraction
+						onClickedTitleSubmit={clickedTitleSubmitHandler}
+						onSetClassName={setClassNameHandler}
+						onFilterByPrice={filterByPriceHandler}
+					/>
+				</div>
 			</div>
 
 			<div className="container">
@@ -63,10 +65,9 @@ const Catalog = () => {
 						filteredPriceData={filteredByPrice}
 					/>
 				)}
-
 				<Footer />
 			</div>
-		</div>
+		</>
 	);
 };
 
