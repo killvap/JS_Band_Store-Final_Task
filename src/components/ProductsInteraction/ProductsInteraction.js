@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PriceFilter from "./PriceFilter";
 import ProductSearch from "./ProductSearch";
 import productData from "../../data/ProductData";
-import "./ProductsInteraction.css";
+import "./ProductsInteraction.scss";
 
 const ProductsInteraction = (props) => {
 	const clickedTitleHandler = (title) => {

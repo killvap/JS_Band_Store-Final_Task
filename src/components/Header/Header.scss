@@ -1,0 +1,38 @@
+.dFlex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav {
+	@extend .dFlex;
+	justify-content: space-between;
+	width: 100%;
+	color: white;
+	display: block;
+	.header_user-auth-info {
+		background-color: black;
+		padding: 15px;
+		.container {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+
+	.header_user-cart {
+		display: flex;
+		.user-logo {
+			font-size: 50px;
+			width: 85%;
+		}
+		.user-cart {
+			color: white;
+			width: 15%;
+			.fa {
+				cursor: pointer;
+				padding-top: 30px;
+    			float: right;
+			}
+		}
+	}
+}

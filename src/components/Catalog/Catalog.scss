@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 $roboto: "Roboto";
 $cursive_font: "Satisfy";
 $round: "Varela Round";
@@ -25,52 +26,6 @@ body {
 	align-items: center;
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	height: auto;
-	box-sizing: border-box;
-}
-
-nav {
-	@extend .dFlex;
-	justify-content: space-between;
-	width: 100%;
-	color: $white;
-	padding: 30px;
-	.logo {
-		font-size: 50px;
-	}
-	ul {
-		@extend .dFlex;
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-		li {
-			transform: skewX(-10deg);
-			font-size: 25px;
-			margin-left: 15px;
-			padding: 15px;
-			box-sizing: border-box;
-			cursor: pointer;
-			width: auto;
-			height: 35px;
-			background-color: black;
-			@extend .dFlex;
-		}
-	}
-	.search {
-		color: rgba($white, 0.7);
-		.fa {
-			cursor: pointer;
-			+ .fa {
-				margin-left: 15px;
-			}
-		}
-	}
-}
-
 .main_content {
 	@extend .dFlex;
 	position: relative;
@@ -81,11 +36,7 @@ nav {
 	box-sizing: border-box;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	.no-result_message {
-		font-size: 50px;
-		text-align: center;
-		margin: 0 auto;
-	}
+
 	h3 {
 		position: absolute;
 		left: 0;
@@ -94,7 +45,8 @@ nav {
 		font-size: 10.5vw;
 	}
 	.card {
-		padding: 30px;
+		height: 500px;
+		padding: 25px;
 		width: 25%;
 		border-radius: 15px;
 		@extend .dFlex;
@@ -114,17 +66,27 @@ nav {
 		.card_header {
 			@extend .dFlex;
 			flex-direction: column;
-			color: $white;
-			h2 {
-				font-size: 18px;
+			color: black;
+			text-align: center;
+			span {
+				font-size: 20px;
+				padding-top: 5px;
+				font-weight: bold;
 			}
 			p {
-				font-size: 14px;
-				text-align: center;
-				color: rgba($white, 0.3);
+				font-size: 16px;
+				
 				margin: 8px 0;
+				padding-bottom: 5px;
 			}
+			
+		}
+
+		.card_body {
+			display: flex;
+			padding-top: 10px;
 			.price {
+				padding-top: 4px;
 				font-size: 25px;
 				color: $cta;
 				span {
@@ -136,23 +98,20 @@ nav {
 		}
 	}
 	.card:hover {
-		// background: url(https://media.istockphoto.com/vectors/books-seamless-pattern-vector-id470721440?k=6&m=470721440&s=612x612&w=0&h=OtHvCXQICZ0hXiJJT0tWYrwZznqYw_ncU307tQDrDUA=);
 		background-color: #fafaee;
 		transform: scale(1.1);
 		cursor: pointer;
 		border-style: groove;
-	}
-	.card:hover {
-		.btn {
+		.btn:hover {
 			background-color: $cta;
 			color: $white;
-		}
+		}	
 	}
 }
 .btn {
-	width: 130px;
+	width: 90px;
 	height: 35px;
-	font-size: 14px;
+	font-size: 20px;
 	border-radius: 35px;
 	background-color: black;
 	color: white;
@@ -161,37 +120,5 @@ nav {
 	position: relative;
 	transition: background-color 0.3s ease;
 	overflow: hidden;
-}
-
-.footer {
-	@extend .dFlex;
-	justify-content: space-between;
-	color: black;
-	font-size: 12px;
-	padding: 0 20px;
-	position: fixed;
-    bottom: 0;
-    width: 100%;
-	p {
-		background-color: lightgray;
-		border-radius: 20px;
-		padding: 8px;
-	}
-	
-	.social {
-		@extend .dFlex;
-		.fa {
-			background-color: lightgray;
-			width: 50px;
-			height: 50px;
-			border-radius: 50px;
-			border: 1px solid black;
-			@extend .dFlex;
-			font-size: 14px;
-			cursor: pointer;
-			+ .fa {
-				margin-left: 15px;
-			}
-		}
-	}
+	margin-left: 15px;
 }

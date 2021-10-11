@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import SearchIcon from "@material-ui/icons/Search";
-import "./ProductSearch.css";
+import React, { useState } from "react";
+
+import "./ProductSearch.scss";
 
 const ProductSearch = (props) => {
 	// States

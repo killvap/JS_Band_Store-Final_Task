@@ -1,0 +1,49 @@
+.login_container {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    .login_container__row {
+        margin: auto;
+		background-color: #fafaee;
+		background-clip: border-box;
+		border: 1px solid rgba(0, 0, 0, 0.125);
+		border-radius: 0.25rem;
+    }
+	.login_card {
+        padding: 20px;
+		
+        .login_card__img {
+            height: 300px;
+            width: auto ;
+            padding: 30px;
+        }
+	}
+    .form-group {
+        display: grid;
+        label {
+            font-weight: bold;
+        }
+
+        label, input {
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        .btn {
+            width: 100%;
+            border: none;
+        }
+        &:hover {
+            .btn {
+                background-color: #fe8033;
+            }
+        }
+    }
+}

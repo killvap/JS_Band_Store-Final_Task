@@ -1,9 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import ProductListing from './components/ProductListing/ProductListing';
+import { Route } from "react-router-dom";
+
+import './App.scss';
+import "./scss/common.scss"
+import CatalogPage from "./pages/CatalogPage";
+import LoginPage from './pages/LoginPage';
+import Header from "./components/Header/Header";
 
 function App() {
-  return <ProductListing/>
+  return (
+		<>
+      {/* <Header/> */}
+      <Route path={`${process.env.PUBLIC_URL}`}>
+        <CatalogPage/>
+      </Route>
+			<Route path={`${process.env.PUBLIC_URL}/login`}>
+        <LoginPage/>
+      </Route>
+		</>
+	);
 }
 
 export default App;
